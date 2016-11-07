@@ -1,13 +1,17 @@
 {
   "name": "amtab-angular",
   "version": "1.0.0",
+  "description": "An AngularJS AMTAB project",
+  "readme": "README.md",
   "repository": {
-  "type": "git",
-  "url": "git://github.com/username/repository.git"
-}
+    "type": "git",
+    "url": "https://github.com/iliion/amtab_angular.git"
+  },
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
+    "test": "concurrently \"npm run tsc:w\" \"karma start karma.conf.js\"",
+    "test-once": "tsc && karma start karma.conf.js --single-run",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
@@ -38,6 +42,11 @@
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-htmlfile-reporter": "^0.3.4",
+    "karma-jasmine": "^1.0.2",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3"
   }
