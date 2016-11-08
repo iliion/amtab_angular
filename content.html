@@ -1,4 +1,19 @@
 <h1>{{title}}</h1>
-<h2>{{bus.name}} details!</h2>
-<div><label>id: </label>{{bus.id}}</div>
-<div><label>name: </label>{{bus.name}}</div>
+<div *ngIf="selectedBus">
+  <h2>{{selectedBus.name}} details!</h2>
+  <div>
+	<label>id: </label>{{selectedBus.id}}
+  </div>
+  <div>
+    <label>name: </label>{{selectedBus.name}}
+  </div>
+</div>
+<div>
+<h2>Lista di Autobus</h2>
+  <ul class="buses">
+    <li *ngFor="let bus of buses"  (click)="onSelect(bus)">
+      <span class="badge">{{bus.id}}</span> {{bus.name}}
+    </li>
+  </ul>
+</div>
+
