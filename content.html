@@ -1,13 +1,4 @@
 <h1>{{title}}</h1>
-<div *ngIf="selectedBus">
-  <h2>{{selectedBus.name}} details!</h2>
-  <div>
-	<label>id: </label>{{selectedBus.id}}
-  </div>
-  <div>
-    <label>name: </label>{{selectedBus.name}}
-  </div>
-</div>
 <div>
 <h2>Lista di Autobus</h2>
   <ul class="buses">
@@ -16,4 +7,6 @@
     </li>
   </ul>
 </div>
+<my-bus-detail [bus]="selectedBus"></my-bus-detail>
+
 
