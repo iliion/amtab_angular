@@ -7,6 +7,7 @@ import { StopsComponent } from './components/stops.component';
 import { BusesComponent } from './components/buses.component';
 import { BusDetailComponent } from './components/bus-detail.component';
 import { BusService }         from './services/bus.service';
+import { StopService }         from './services/stop.service';
 
 @NgModule({
   imports: [ 
@@ -34,7 +35,9 @@ import { BusService }         from './services/bus.service';
     BusesComponent,
     BusDetailComponent ],
   providers:   
-  [ BusService ];
+  [ BusService,
+    StopService 
+  ],
   bootstrap:  
   [ AppComponent ]
 })
