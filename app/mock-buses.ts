@@ -1,4 +1,4 @@
-import { Bus } from './bus';
+import { Bus } from './entities/bus';
 
 export const BUSES: Bus[] = [
   { id: 1, name: 'Linea 1' },

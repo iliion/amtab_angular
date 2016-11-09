@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }   from './app.component';
-import { BusDetailComponent } from './bus-detail.component';
+import { AppComponent }   from './components/app.component';
+import { BusDetailComponent } from './components/bus-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule ],

@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
-import { Bus } from './bus';
+import { Bus } from '../entities/bus';
 
 @Component({
   selector: 'my-bus-detail',
-  templateUrl: 'bus-detail.html'
+  templateUrl: 'app/views/bus-detail.html'
 })
 
 export class BusDetailComponent {

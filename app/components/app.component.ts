@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Bus } from './bus';
-import { BusService } from './bus.service';
+import { Bus } from '../entities/bus';
+import { BusService } from '../services/bus.service';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'content.html',
+  templateUrl: 'app/views/content.html',
   providers:[BusService]
 })
 
