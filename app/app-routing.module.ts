@@ -10,6 +10,7 @@ import { BusDetailComponent } from './components/bus-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/content', pathMatch: 'full' },
   { path: 'stops',  component: StopsComponent },
+  { path: 'busDetail/:id', component: BusDetailComponent},
   { path: 'buses',  component: BusesComponent }
 ];
 

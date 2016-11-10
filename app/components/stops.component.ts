@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Stop } from '../entities/stop';
 import { StopService } from '../services/stop.service';

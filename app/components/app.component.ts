@@ -5,6 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'app/views/content.html'
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'AMTAB';
 }

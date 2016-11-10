@@ -1,8 +1,15 @@
 <div>
 <h2>Lista di Autobus</h2>
   <ul class="buses">
-    <li *ngFor="let bus of buses"  (click)="onSelect(bus)">
+    <li *ngFor="let bus of buses"   
+        (click)="onSelect(bus)">
       <span class="badge">{{bus.id}}</span> {{bus.name}}
-    </li>
   </ul>
 </div>
+<div *ngIf="selectedBus">
+  <h2>
+    {{selectedBus.name | uppercase}}
+  </h2>
+  <button (click)="gotoBusDetail()"> Dettagli </button>
+</div>
+
