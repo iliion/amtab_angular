@@ -10,7 +10,7 @@ import { StopService } from '../services/stop.service';
 
 export class StopsComponent implements OnInit {
   stops: Stop[];
-  // selectedStop: Stop;
+  selectedStop: Stop;
 
   constructor(private stopService: StopService) {}
 
@@ -22,7 +22,7 @@ export class StopsComponent implements OnInit {
   	this.getStops();
   }
 
-  // onSelect(stop:Stop):void {
-  // 	this.selectedStop = stop;
-  // }
+  onSelect(stop:Stop):void {
+   	this.selectedStop = stop;
+  }
 }
